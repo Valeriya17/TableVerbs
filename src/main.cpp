@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <string.h>
-#include <cstdlib>
-#include <iomanip>
-#include <ctime>
-
-using namespace std;
+#include <head.h>
 
 int main(){
 	#ifdef unix
