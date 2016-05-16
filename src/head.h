@@ -11,8 +11,6 @@
 
 using namespace std;
 
-const int count_verbs = 295;
-
 #ifdef unix
 	#define RESET   "\033[0m"
 	#define RED     "\033[1;31m"
@@ -20,6 +18,7 @@ const int count_verbs = 295;
 	#define WHITE   "\033[1;37m"
 	#define GREEN	"\033[1;32m"
 	#define BLUE	"\033[1;34m"
+	#define clear	"clear"
 #else
 	#define RESET   ""
 	#define RED     ""
@@ -27,14 +26,20 @@ const int count_verbs = 295;
 	#define WHITE   ""
 	#define GREEN	""
 	#define BLUE	""
+	#define clear	"cls"
 #endif
 
-char clear[6];
+const int count_verbs = 295;
 
 struct verbs {
     string infin;
     string past;
     string part2;
 };
+
+// Question 1
+void read(verbs *cl);
+void write_verbs(verbs *cl);
+
 
 #endif // _HEAD_h_

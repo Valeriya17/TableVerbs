@@ -1,13 +1,11 @@
-#include <head.h>
+#include "head.h"
 
 int main(){
-	#ifdef unix
-		strcpy(clear, "clear");
-	#else
-		strcpy(clear, "cls");
-	#endif
-
+	
+	verbs *cl = new verbs[count_verbs];
 	int key;
+	
+	read(cl);
 
     do{
 		cout << endl << "-----------------------------------" << endl;
@@ -21,8 +19,8 @@ int main(){
              << "5. What is the verbs?" << endl;
         cin >> key;
         switch(key){
-            case 1: system(clear);  break;
-            case 2: system(clear);  break;
+            case 1: system(clear); write_verbs(cl); break;
+            case 2: system(clear); break;
             case 3: system(clear);  break;
             case 4: system(clear);  break;
             case 5: system(clear);  break;
