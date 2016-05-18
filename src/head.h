@@ -41,5 +41,9 @@ struct verbs {
 void read(verbs *cl);
 void write_verbs(verbs *cl);
 
+// Question 2
+int str_slash(string dest, string buff);
+void found_verb(verbs *cl, int mod);
+
 
 #endif // _HEAD_h_
