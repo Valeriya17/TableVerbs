@@ -1,4 +1,4 @@
-double compare_forms(string dest, string buff){
+﻿double compare_forms(string dest, string buff){
 	if(dest == buff) return 1.0;
 
 	int slash = dest.find('/');
@@ -61,5 +61,5 @@ void test(verbs *cl){
 	}
 
 	result_test = (result_test / (size_test * 2)) * 100;
-	cout << endl << "Result test: " << result_test << "%" << endl;
+	cout << endl << "Result test: " << result_test << " % " << endl;
 }

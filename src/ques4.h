@@ -2,6 +2,6 @@
 #define _QUES3_h_
 
 double compare_forms(string, string);
-void test(verbs*;
+void test(verbs*);
 
 #endif
