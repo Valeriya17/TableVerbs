@@ -20,3 +20,11 @@ ques4.o : src/ques4.cpp
 
 obj:
 	mkdir obj/
+
+.PHONY: test
+
+
+test:
+	g++ -o test/test test/test.cpp src/found_verb.cpp
+	test/test
+	rm test/test
