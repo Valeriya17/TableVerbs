@@ -1,5 +1,4 @@
-all: read.o found_verb.o ques3.o ques4.o main.o
-	mkdir obj/	
+all: obj read.o found_verb.o ques3.o ques4.o main.o	
 	g++ -o tableverbs obj/read.o obj/ques3.o obj/ques4.o obj/found_verb.o obj/main.o
 
 main.o: src/main.cpp
@@ -16,3 +15,8 @@ ques3.o : src/ques3.cpp
 
 ques4.o : src/ques4.cpp
 	g++ -o obj/ques4.o -c src/ques4.cpp
+
+.PHONY:
+
+obj:
+	mkdir obj/
