@@ -1,3 +1,5 @@
+#include "head.h"
+
 void found_form(verbs *cl){
 	string buff;
 	cout << "Enter search verb: ";

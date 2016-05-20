@@ -1,4 +1,6 @@
-﻿double compare_forms(string dest, string buff){
+﻿#include "head.h"
+
+double compare_forms(string dest, string buff){
 	if(dest == buff) return 1.0;
 
 	int slash = dest.find('/');

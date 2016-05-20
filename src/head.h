@@ -41,9 +41,16 @@ struct verbs {
 void read(verbs *cl);
 void write_verbs(verbs *cl);
 
-// Question 2
+// Question 2, 5
 int str_slash(string dest, string buff);
 void found_verb(verbs *cl, int mod);
+
+// Question 3
+void found_form(verbs *cl);
+
+// Question 4
+double compare_forms(string, string);
+void test(verbs *cl);
 
 
 #endif // _HEAD_h_

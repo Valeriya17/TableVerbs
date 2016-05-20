@@ -21,9 +21,9 @@ int main(){
         switch(key){
             case 1: system(clear); write_verbs(cl); break;
             case 2: system(clear); found_verb(cl, 1); break;
-            case 3: system(clear);  break;
-            case 4: system(clear);  break;
-            case 5: system(clear);  break;
+            case 3: system(clear); found_form(cl); break;
+            case 4: system(clear); test(cl); break;
+            case 5: system(clear); found_verb(cl, 2); break;
             case 0: return EXIT_SUCCESS;
             default: system(clear); cout << "Incrorrect key!!!" << endl; break;
         }
